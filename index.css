@@ -1,0 +1,86 @@
+
+* {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  body {
+    background: #385170;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 15px; */
+  }
+  
+  .card {
+    background: #9fd3c7 ;
+    border-radius: 4px;
+    height: 90vh;
+    width: 87vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    /* border-radius: 50% 0 0 50%; */
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  @media only screen and (max-height: 640px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  img.birthday {
+    max-height: 35vh;
+    border-radius: 5%;
+}
+  
+  .text {
+    padding: 1em;
+  }
+  
+  /* Menyamakan elemen <a> dengan tampilan tombol */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #385170;
+    color: #ffffff;
+    border: 2px solid#385170;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Memberikan efek hover saat kursor berada di atas tombol */
+  .button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    color: #ffffff;
+  }
+  
+  .space {
+    height: 100px;
+  }
